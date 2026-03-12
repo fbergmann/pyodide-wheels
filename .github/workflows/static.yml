@@ -35,7 +35,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - run: pip install simple503
-      - run: simple503 --sort wheels/ --output simple/
+      - run: simple503 --copy --sort wheels/ simple/
       - name: Add a minimal landing page
         run: |
           cat > index.html << 'EOF'
